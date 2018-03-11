@@ -1,0 +1,1017 @@
+
+ID: 1
+ExeStack:
+{{sum( a  b ) {v=a+b; Print(v)}; product( a  b ) {v=a*b; Print(v)}}; {{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{sum( a  b ) {v=a+b; Print(v)}; product( a  b ) {v=a*b; Print(v)}}
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+sum( a  b ) {v=a+b; Print(v)}
+product( a  b ) {v=a*b; Print(v)}
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+product( a  b ) {v=a*b; Print(v)}
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{{v=2; w=5}; call sum( v*10  w ) }
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{v=2; w=5}
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+v=2
+w=5
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+w=5
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{v=a+b; Print(v)}
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+v=a+b
+Print(v)
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+Print(v)
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+v --> 25
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+v --> 25
+OutputList:
+25
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+{call product( v  w ) ; fork(call sum( v  w ) )}
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+call product( v  w ) 
+fork(call sum( v  w ) )
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+{v=a*b; Print(v)}
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+v=a*b
+Print(v)
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+Print(v)
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+v --> 10
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+v --> 10
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+fork(call sum( v  w ) )
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+call sum( v  w ) 
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+{v=a+b; Print(v)}
+return
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+v=a+b
+Print(v)
+return
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+Print(v)
+return
+SymbolTable:
+a --> 2
+b --> 5
+v --> 7
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+return
+SymbolTable:
+a --> 2
+b --> 5
+v --> 7
+OutputList:
+25
+2
+10
+7
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{{sum( a  b ) {v=a+b; Print(v)}; product( a  b ) {v=a*b; Print(v)}}; {{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{sum( a  b ) {v=a+b; Print(v)}; product( a  b ) {v=a*b; Print(v)}}
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+sum( a  b ) {v=a+b; Print(v)}
+product( a  b ) {v=a*b; Print(v)}
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+product( a  b ) {v=a*b; Print(v)}
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{{v=2; w=5}; call sum( v*10  w ) }
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{v=2; w=5}
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+v=2
+w=5
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+w=5
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{v=a+b; Print(v)}
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+v=a+b
+Print(v)
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+Print(v)
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+v --> 25
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+v --> 25
+OutputList:
+25
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+{call product( v  w ) ; fork(call sum( v  w ) )}
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+call product( v  w ) 
+fork(call sum( v  w ) )
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+{v=a*b; Print(v)}
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+v=a*b
+Print(v)
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+Print(v)
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+v --> 10
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+v --> 10
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+fork(call sum( v  w ) )
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+call sum( v  w ) 
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+{v=a+b; Print(v)}
+return
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+v=a+b
+Print(v)
+return
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+Print(v)
+return
+SymbolTable:
+a --> 2
+b --> 5
+v --> 7
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+return
+SymbolTable:
+a --> 2
+b --> 5
+v --> 7
+OutputList:
+25
+2
+10
+7
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{{sum( a  b ) {v=a+b; Print(v)}; product( a  b ) {v=a*b; Print(v)}}; {{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{sum( a  b ) {v=a+b; Print(v)}; product( a  b ) {v=a*b; Print(v)}}
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+sum( a  b ) {v=a+b; Print(v)}
+product( a  b ) {v=a*b; Print(v)}
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+product( a  b ) {v=a*b; Print(v)}
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{{{v=2; w=5}; call sum( v*10  w ) }; Print(v)}
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{{v=2; w=5}; call sum( v*10  w ) }
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{v=2; w=5}
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+v=2
+w=5
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+w=5
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+call sum( v*10  w ) 
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+{v=a+b; Print(v)}
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+v=a+b
+Print(v)
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+Print(v)
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+v --> 25
+OutputList:
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+return
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+a --> 20
+b --> 5
+v --> 25
+OutputList:
+25
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+Print(v)
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+FileTable:
+Heap:
+
+ID: 1
+ExeStack:
+fork({call product( v  w ) ; fork(call sum( v  w ) )})
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+{call product( v  w ) ; fork(call sum( v  w ) )}
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+call product( v  w ) 
+fork(call sum( v  w ) )
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+{v=a*b; Print(v)}
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+v=a*b
+Print(v)
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+Print(v)
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+v --> 10
+OutputList:
+25
+2
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+return
+fork(call sum( v  w ) )
+SymbolTable:
+a --> 2
+b --> 5
+v --> 10
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 2
+ExeStack:
+fork(call sum( v  w ) )
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+call sum( v  w ) 
+SymbolTable:
+v --> 2
+w --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:
+
+ID: 3
+ExeStack:
+{v=a+b; Print(v)}
+return
+SymbolTable:
+a --> 2
+b --> 5
+OutputList:
+25
+2
+10
+FileTable:
+Heap:

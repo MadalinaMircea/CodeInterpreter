@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="StackPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="view.InterpreterController">
+  <children>
+    <Group fx:id="Group">
+      <children>
+        <Label fx:id="prgStatesLabel" layoutX="0.0" layoutY="0.0" prefHeight="32.0" prefWidth="134.0" text="Program ID">
+          <font>
+            <Font size="20.0" fx:id="x1" />
+          </font>
+        </Label>
+        <ListView fx:id="prgStatesList" layoutX="0.0" layoutY="41.0" prefHeight="200.0" prefWidth="110.0" />
+        <ListView fx:id="outView" layoutX="185.0" layoutY="41.0" prefHeight="200.0" prefWidth="110.0" />
+        <ListView fx:id="stackView" layoutX="380.0" layoutY="41.0" prefHeight="200.0" prefWidth="337.0" />
+        <TableView fx:id="heapView" layoutX="0.0" layoutY="291.0" prefHeight="200.0" prefWidth="143.0">
+          <columns>
+            <TableColumn fx:id="heapViewAddress" maxWidth="5000.0" minWidth="10.0" prefWidth="71.20001220703125" text="Address" />
+            <TableColumn fx:id="heapViewValue" maxWidth="5000.0" minWidth="10.0" prefWidth="70.20000457763672" text="Value" />
+          </columns>
+        </TableView>
+        <TableView fx:id="fileView" layoutX="173.0" layoutY="291.0" prefHeight="200.0" prefWidth="145.0">
+          <columns>
+            <TableColumn fx:id="fileViewId" maxWidth="5000.0" minWidth="10.0" prefWidth="73.5999755859375" text="ID" />
+            <TableColumn fx:id="fileViewName" maxWidth="5000.0" minWidth="10.0" prefWidth="70.60000610351562" text="Name" />
+          </columns>
+        </TableView>
+        <TableView fx:id="symbolView" layoutX="354.0" layoutY="291.0" prefHeight="200.0" prefWidth="142.0">
+          <columns>
+            <TableColumn fx:id="symbolViewName" maxWidth="5000.0" minWidth="10.0" prefWidth="71.199951171875" text="Name" />
+            <TableColumn fx:id="symbolViewValue" maxWidth="5000.0" minWidth="10.0" prefWidth="70.00003051757812" text="Value" />
+          </columns>
+        </TableView>
+        <Label font="$x1" layoutX="185.0" layoutY="2.0" prefWidth="80.0" text="Output" />
+        <Label font="$x1" layoutX="380.0" layoutY="2.0" prefWidth="134.0" text="Exec Stack" />
+        <Label font="$x1" layoutX="0.0" layoutY="255.0" prefWidth="80.0" text="Heap" />
+        <Label font="$x1" layoutX="173.0" layoutY="255.0" prefWidth="87.0" text="File Table" />
+        <Label font="$x1" layoutX="354.0" layoutY="255.0" prefWidth="171.0" text="Symbol Table" />
+        <Button fx:id="runButton" font="$x1" layoutX="353.0" layoutY="511.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="122.0" text="One Step" />
+        <TextField fx:id="numberField" layoutX="0.0" layoutY="521.0" prefWidth="200.0" text="0" />
+            <TableView fx:id="procTable" layoutX="525.0" layoutY="291.0" prefHeight="200.0" prefWidth="302.0">
+              <columns>
+                <TableColumn fx:id="procTableName" prefWidth="108.79998779296875" text="Name(params)" />
+                <TableColumn fx:id="procTableBody" prefWidth="192.4000244140625" text="Body" />
+              </columns>
+            </TableView>
+            <Label layoutX="525.0" layoutY="255.0" prefWidth="171.0" text="Proc Table">
+               <font>
+                  <Font size="20.0" fx:id="x11" />
+               </font>
+            </Label>
+      </children>
+    </Group>
+  </children>
+  <padding>
+    <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+  </padding>
+</StackPane>
